@@ -1,0 +1,42 @@
+Runner:
+import the Scanner class
+allow the user to give coordinates via Scanner - in coordinate form
+    use string.substring to get x and y values.
+        - only way this works is if the user inputs the values accordingly
+            - find the length of the string ( without parenthesis )
+                - set substirng(1, length - 1)
+                    - find comma then you create two variables
+            - turn the values from String into integers using "parse out".
+    print toString values ( all the LinearEquation values )
+        - then ask for a x value ( can be a double )
+            - solve by substituting into the equation of the line.
+
+LinearEquation:
+Create four parameters with x1, x2, y1, y2
+Create variables for the parameters ^
+Create constructor ^ assign parameters to variables
+Create a method for each, solve using math
+    The two original points
+        - just return x and y values of both coordinates
+    The equation of the line through the two points in y = mx + b format
+        - y = slope(x) + b
+    The slope of the line
+        - y2-y1/x2-x1
+            - do this separately to keep the fraction.
+    The y-intercept of the line
+        - is b in y = mx + b
+    The distance between the two points
+        - sqrroot((x2-x1)^2 + (y2 - y1)^2)
+            - make a double before using this equation
+    Solve through substituting the x value given from the user into the equation.
+
+toString:
+    Turn each of the values from LinearEquation into a String
+    "First pair: "
+    "Second pair: "
+    "Slope of line: "
+    "Y-intercept: "
+    "Slope intercept form: "
+    "Distance between points: "
+    "Solved coordinate point is: "
+        Later used in the Runner to print out the information for the user
