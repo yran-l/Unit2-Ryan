@@ -12,10 +12,11 @@ allow the user to give coordinates via Scanner - in coordinate form
             - solve by substituting into the equation of the line.
 
 LinearEquation:
-Create four parameters with x1, x2, y1, y2
-Create variables for the parameters ^
+Create four instance variables with x1, x2, y1, y2
+Create variables for the instance variables ^
 Create constructor ^ assign parameters to variables
 Create a method for each, solve using math
+Import math
     The two original points
         - just return x and y values of both coordinates
     The equation of the line through the two points in y = mx + b format
