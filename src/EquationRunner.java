@@ -33,6 +33,6 @@ public class EquationRunner {
         String third = s.nextLine();
         double tempthird = Double.parseDouble(third);
         double y3 = done.solve(tempthird);
-        System.out.println("Solved coordinate point is: (" + tempthird + "," + y3 + ")");
+        System.out.println("Solved coordinate point is: (" + tempthird + "," + String.format("%.2f", y3) + ")");
     }
 }

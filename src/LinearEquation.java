@@ -45,7 +45,7 @@ public class LinearEquation {
 
 
     public String slopeInterceptForm(){
-       return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x + " + yIntercept();
+       return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x + " + String.format("%.2f", yIntercept());
     }
 
 
@@ -55,7 +55,7 @@ public class LinearEquation {
 
 
     public String toString(){
-        return "First pair: " + firstPair() + "\nSecond pair: " + secondPair() + "\nSlope of line: " + slope() + "\nY-intercept: " + yIntercept() + "\nSlope Intercept form: " + slopeInterceptForm() + "\nDistance between points: " + String.format("%.2f", distanceBetweenPoints());
+        return "First pair: " + firstPair() + "\nSecond pair: " + secondPair() + "\nSlope of line: " + String.format("%.2f", slope()) + "\nY-intercept: " + String.format("%.2f", yIntercept()) + "\nSlope Intercept form: " + slopeInterceptForm() + "\nDistance between points: " + String.format("%.2f", distanceBetweenPoints());
     }
 
 
